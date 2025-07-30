@@ -38,6 +38,8 @@ public class TelaMesa : TelaBase<Mesa>, ITela
              m.Id, m.Numero, m.Capacidade, statusMesa
          );
         }
+
+        ApresentarMensagem("Digite ENTER para continuar...", ConsoleColor.DarkYellow);
     }
 
     protected override Mesa ObterDados()
