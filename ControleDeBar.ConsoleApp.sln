@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeBar.Dominio", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControleDeBar.Infraestrutura.Memoria", "ControleDeBar.Infraestrutura.Memoria\ControleDeBar.Infraestrutura.Memoria.csproj", "{FA265FDC-27FF-AF3E-183E-C7EF8840FBB4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Apresentação", "1. Apresentação", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domínio", "2. Domínio", "{08E45FD3-317E-452A-9716-2E53D36098BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infraestrutura", "3. Infraestrutura", "{C8DC12AA-BC47-428C-8A2F-FF2AFCFD48F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +36,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A19E50E-9E86-4E1E-B5F3-B3B73B223C16} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{214DFBCB-5F89-2F8C-BEC1-401D002FDC44} = {08E45FD3-317E-452A-9716-2E53D36098BB}
+		{FA265FDC-27FF-AF3E-183E-C7EF8840FBB4} = {C8DC12AA-BC47-428C-8A2F-FF2AFCFD48F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8032D88-E1C5-4FED-AEAD-3C14C26C70A6}
