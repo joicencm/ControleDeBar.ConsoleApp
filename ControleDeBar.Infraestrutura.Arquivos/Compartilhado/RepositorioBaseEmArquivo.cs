@@ -6,13 +6,22 @@ public abstract class RepositorioBaseEmArquivo<Tipo> where Tipo : EntidadeBase<T
 {
     protected ContextoDados contextoDados;
     protected List<Tipo> registros = new List<Tipo>();
-    protected int contadorRegistros = 0;
     protected int contadorIds = 0;
 
     protected RepositorioBaseEmArquivo(ContextoDados contextoDados)
     {
         this.contextoDados = contextoDados;
         registros = ObterRegistros();
+
+        int maiorId = 0;
+
+        foreach (Tipo registro in registros)
+        {
+            if (registro != null && registro.Id > maiorId)
+                maiorId = registro.Id;
+        }
+
+        contadorIds = maiorId;
     }
 
     protected abstract List<Tipo> ObterRegistros();
