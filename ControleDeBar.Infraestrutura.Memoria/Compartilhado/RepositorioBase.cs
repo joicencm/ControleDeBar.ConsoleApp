@@ -1,4 +1,6 @@
-﻿namespace ControleDeBar.ConsoleApp.Compartilhado;
+﻿using ControleDeBar.Dominio.Compartilhado;
+
+namespace ControleDeBar.Infraestrutura.Memoria.Compartilhado;
 
 public abstract class RepositorioBase<Tipo> where Tipo : EntidadeBase<Tipo>
 {
@@ -27,10 +29,10 @@ public abstract class RepositorioBase<Tipo> where Tipo : EntidadeBase<Tipo>
 
     public bool ExcluirRegistro(int idSelecionado)
     {
-        for(int i = 0; i < registros.Length; i++)
+        for (int i = 0; i < registros.Length; i++)
         {
-            if(registros[i] == null)
-            continue;
+            if (registros[i] == null)
+                continue;
 
             else if (registros[i].Id == idSelecionado)
             {
@@ -49,7 +51,7 @@ public abstract class RepositorioBase<Tipo> where Tipo : EntidadeBase<Tipo>
 
     public Tipo SelecionarRegistroPorId(int idSelecionado)
     {
-        for (int i =0; i < registros.Length; i++)
+        for (int i = 0; i < registros.Length; i++)
         {
             Tipo registro = registros[i];
 

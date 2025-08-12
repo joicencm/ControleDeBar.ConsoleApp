@@ -1,6 +1,6 @@
-﻿using ControleDeBar.ConsoleApp.ModuloProduto;
+﻿using ControleDeBar.Dominio.ModuloProduto;
 
-namespace ControleDeBar.ConsoleApp.ModuloConta;
+namespace ControleDeBar.Dominio.ModuloConta;
 
 public class Pedido
 {
@@ -9,6 +9,10 @@ public class Pedido
     public int QuantidadeSolicitada { get; set; }
 
     private static int contadorIds = 0;
+
+    public Pedido()
+    {
+    }
 
     public Pedido(Produto produto, int quantidadeEscolhida)
     {
